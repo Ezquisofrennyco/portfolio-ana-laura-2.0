@@ -119,7 +119,7 @@ home-content, .about-content {
     line-height: justify;
 }
 
-.service h2, .portifolio h2, .contact h2 {
+.service h2, .portfolio h2, .contact h2 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -138,4 +138,26 @@ home-content, .about-content {
     justify-content: space-between;
     min-height: 25rem;
     margin-bottom: 1rem;
+}  
+
+body {
+  margin: 0;
+  height: 100vh;
+ 
+  background: linear-gradient(-45deg, #40003a, #15003a, #050023, #001850);
+  background-size: 400% 400%;
+ 
+  animation: gradientMove 10s ease infinite;
+}
+ 
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
